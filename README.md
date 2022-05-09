@@ -1,5 +1,7 @@
 # helios-automatic-analysis
 
+Created in collaboration by Samuel May, 
+
 Contains all of the tools neccessary to run the helios suite of tools against GitHub.
 
 ---
@@ -129,19 +131,19 @@ To start the graphing server.
 ---
 ## Help
 
-### OH BLIMEY, WHAT ARE ALL OF THESE WGET ERRORS?
+### What are all of these wget errors?
 
 Run `npm run clean` to remove all in-progress workload, check the content of `currentTime.json` to see where the current marker is and then adjust accordingly.
 
-### OH BLIMEY, WHAT ARE THESE ERRORS IN THE SCRAPER LOGS?
+### What are these errors in the scraper logs?
 
 We use scraping to get content from the GitHub UI, sometimes the UI isn't consistent so therefore sometimes the scraping fails. In this case the document is droppped and not added to the DB (as we can't verify the correct figures). Errors are only a concern if there are a large number of them.
 
-### OH BLIMEY, WHY DOES IT SAY THE PRIMARY RATE LIMIT HAS BEEN BREACHED?
+### Why does it say the primary rate limit has been breached?
 
 API Keys can only be used 5,000 times an hour, if this tool breaches this limit it will automatically wait until the renewal time before scraping more data. Breaching the primary rate limit is a good signal as it means the tool is not being bottlenecked elsewhere.
 
-### OH BLIMEY, WHY DOES IT SAY THE SECONDARY RATE LIMIT HAS BEEN BREACHED?
+### Why does it say the secondary rate limit has been breached?
 
 Even though GitHub provides 5,000 requests per hour there is a limit on the amount of requests per unit time, if the secondary rate limit is breached the tool will automatically wait until it is allowed to make requests again.
 
