@@ -1,6 +1,6 @@
 # helios-automatic-analysis
 
-Created in collaboration by Samuel May, Emily Maryon [(@EmilyMaryon)](https://github.com/EmilyMaryon)
+Created in collaboration by Samuel May, Emily Maryon [(@EmilyMaryon)](https://github.com/EmilyMaryon), and Ashley Aitken [(@ashleycma)](https://gitlab.com/ashleycma).
 
 Contains all of the tools neccessary to run the helios suite of tools against GitHub.
 
