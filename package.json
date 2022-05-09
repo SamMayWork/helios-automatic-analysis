@@ -1,0 +1,39 @@
+{
+  "name": "helios-automatic-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createDirs": "mkdir -p processed && mkdir -p logs && mkdir -p extracted",
+    "extractor": "npm run createDirs && node scripts/extractor.js",
+    "processor": "npm run createDirs && node scripts/processor.js",
+    "classifier": "node scripts/repoClassifier.js",
+    "scraper": "node scripts/scraper.js",
+    "dbtocsv": "node scripts/dbToCsv.js",
+    "clean": "rm -rf processed/ && rm -rf *.json.gz && rm -rf logs/ && rm -rf extracted/",
+    "rescraper": "npm run createDirs && node scripts/rescraper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilyMaryon/helios-automatic-analysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmilyMaryon/helios-automatic-analysis/issues"
+  },
+  "homepage": "https://github.com/EmilyMaryon/helios-automatic-analysis#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "16.0.0",
+    "nano": "^9.0.5",
+    "node-fetch": "^2.6.7",
+    "node-html-parser": "^5.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}

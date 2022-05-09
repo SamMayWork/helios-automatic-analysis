@@ -1,0 +1,14 @@
+node_modules
+out/*
+in/*
+processed/*
+.DS_Store
+.idea
+db.sqlite
+processed.sqlite
+package-lock.json
+*.csv
+logs/
+extracted/
+currentIndex.txt
+currentTime.json
